@@ -1,0 +1,44 @@
+.contaier{
+    width:95%;
+    margin:auto;
+}
+.nav{
+        display:flex;
+        justify-content: space-around;
+        background-color:#2F2C4D;
+    }
+.menu{
+        width:30%;
+       
+    }
+.list{
+        width:24%;
+       
+    }
+.menu ul li{
+        list-style-type:none;
+    }
+.menu ul{
+    display: flex;
+    justify-content:space-between
+    }
+.menu a {
+        text-decoration: none;
+        font-size:0.8rem;
+        color:white;
+    }
+.list ul{
+        display: flex;
+        justify-content:space-between
+        }
+.list ul li {
+    list-style-type:none;
+}
+.list a {
+    text-decoration: none;
+    font-size:0.8rem;
+    color:white;
+}
+.logo{
+    background-color: grey;
+}
