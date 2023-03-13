@@ -1,128 +1,50 @@
-import React from 'react'
-import "./Header.css"
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
- import { styled, alpha } from '@mui/material/styles';
-import MenuIcon from '@mui/icons-material/Menu';
-import SearchIcon from '@mui/icons-material/Search';
-import InputBase from '@mui/material/InputBase';
 
+import React from 'react'
+import '../Header/Header.css'
+import logo from '../assets/image/bookmyshowlogo.png';
 
 const Header = () => {
-    const Search = styled('div')(({ theme }) => ({
-        position: 'relative',
-        borderRadius: theme.shape.borderRadius,
-        backgroundColor: alpha(theme.palette.common.white, 0.15),
-        '&:hover': {
-          backgroundColor: alpha(theme.palette.common.white, 0.25),
-        },
-        marginLeft: 0,
-        width: '100%',
-        [theme.breakpoints.up('sm')]: {
-          marginLeft: theme.spacing(1),
-          width: 'auto',
-        },
-      }));
-      
-      const SearchIconWrapper = styled('div')(({ theme }) => ({
-        padding: theme.spacing(0, 2),
-        height: '100%',
-        position: 'absolute',
-        pointerEvents: 'none',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-      }));
-      
-      const StyledInputBase = styled(InputBase)(({ theme }) => ({
-        color: 'inherit',
-        '& .MuiInputBase-input': {
-          padding: theme.spacing(1, 1, 1, 0),
-          // vertical padding + font size from searchIcon
-          paddingLeft: `calc(1em + ${theme.spacing(4)})`,
-          transition: theme.transitions.create('width'),
-          width: '100%',
-          [theme.breakpoints.up('sm')]: {
-            width: '12ch',
-            '&:focus': {
-              width: '20ch',
-            },
-          },
-        },
-      }));
-      
-    return (
-    <>
-        <div className='logo'>
-                <Box sx={{ flexGrow: 1 }}>
-            <AppBar position="static" sx={{backgroundColor:"grey" }}>
-                <Toolbar>
-                
-                <Typography
-                    variant="h6"
-                    noWrap
-                    component="div"
-                    sx={{ display: { xs: 'none', sm: 'block' } }}
-                >
-                    bookmyshow
-                </Typography>
-                <Search>
-                    <SearchIconWrapper>
-                    <SearchIcon />
-                    </SearchIconWrapper>
-                    <StyledInputBase
-                    placeholder="Search…"
-                    inputProps={{ 'aria-label': 'search' }}
-                    />
-                </Search>
-                <Box sx={{ display: "flex" }}>
-                    <IconButton
-                        size="large"
-                        edge="start"
-                        color="inherit"
-                        aria-label="open drawer"
-                        sx={{ mr: 2 }}
-                    >
-                        <MenuIcon />
-                    </IconButton>
-                </Box>
-                
-                
-                </Toolbar>
-            </AppBar>
-            
-            </Box>
-
-        </div>
-            <header>
-            
-                <div className='nav'>
-                    <div className='menu'>
-                        <ul>
-                            <li><a href="#">Movies</a> </li>
-                            <li><a href="#">Stream</a> </li>
-                            <li><a href="#">Events</a> </li>
-                            <li><a href="#">Plays</a> </li>
-                            <li><a href="#">Sports</a> </li>
-                            <li><a href="#">Activities</a> </li>
-                            <li><a href="#">Buzz</a> </li>
-                        </ul>  
+ 
+  return (
+    <div>
+      <div className='header'>
+         <div className='container'>
+            <div className='top'>
+                <div className='logoimg'>
+                    <div className='pic'>
+                      <img src={logo} />
                     </div>
-                    <div className='list'>
-                        <ul>
-                            <li><a href="#">ListYourShow</a> </li>
-                            <li><a href="#">Corportes</a> </li>
-                            <li><a href="#">Offers</a> </li>
-                            <li><a href="#">Gift Cards</a> </li>
-                        </ul>  
+                    <div className='logoinp'> 
+                      <input type="text" placeholder='Search for Movies,Events,Plays,Sports and Activities'/>
                     </div>
                 </div>
-            </header> 
-    </>
+                <div className='but'>
+                    <a href="">sign in</a>
+                </div>
+            </div>
+      </div>
+      </div>
+      <div className='header-2'> 
+      <div className='container'>
+          <div className='navbar'>
+            <a>Movies</a>
+            <a>Events</a>
+            <a>Plays</a>
+            <a>Sports</a>
+            <a>Activites</a>
+            <a>Buzz</a>
+          </div>
+        </div>           
+    </div>   
+    <div className='banner'>
+      <img src='https://assets-in.bmscdn.com/promotions/cms/creatives/1678366408975_19web.jpg' width='100%'/>
+    </div>
+   
+       
+  
+
+    </div>
   )
 }
 
-export default Header
+export default Header;

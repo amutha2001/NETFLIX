@@ -1,13 +1,13 @@
 import React from 'react'
 import Header from "./Header/Header"
-import Banner from './Banner/Banner'
-import Card from "./Card/Card"
+
+
+import Products from './Products'
 const Parent = () => {
   return (
     <div>
         <Header />
-        <Banner />
-        <Card />
+        <Products />
     </div>
   )
 }

@@ -1,15 +1,26 @@
 import React from 'react'
-import bookmyshow from "bookmyshow.json"
-//import Card from "./Card/Card"
+import Movies from "./Movies.json"
+import CardItems from './Card/CardItems'
+import "./Products.css"
+
 const Products = () => {
+  console.log("Movies",Movies)
   return (
-    <div>
-        {/* <div className='home'>
-            {bookmyshow?.map((product,index)=>(
-                <Card product={product} key={index} ShowChart={true}/>
-            ))}
-        </div> */}
+    <> 
+    <div className='container'>
+      <h1>Recommended Movies</h1>
+        <div className='movies'>
+            
+            
+            {Movies?.map((movie,index)=>(
+            <CardItems movie={movie} key={index}/>
+          ))}
+        
+        </div>
     </div>
+      
+    </>
+    
   )
 }
 
