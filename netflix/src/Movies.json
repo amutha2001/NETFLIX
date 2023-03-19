@@ -17,6 +17,29 @@
     {
         "image":"https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/ayodhi-et00350136-1673932656.jpg",
         "Name":"Ayothi",
+        "Description":"Drama",
+        "second":[
+            
+        ]
+    },
+    {
+        "image":" https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/ghosty-et00311486-1678950431.jpg",
+        "Name":"Ghosty",
+        "Description":"Comedy/Horror"
+    },
+    {
+        "image":" https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/kannai-nambaathe-et00354916-1678796807.jpg",
+        "Name":"Kannai-Nambaathe",
+        "Description":"Crime/Drama/Thriller"
+    },
+    {
+        "image":" https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/shazam-fury-of-the-gods-et00312239-1678088844.jpg",
+        "Name":"shazam! Fury of the Gods",
+        "Description":"Action/Adventure/Fantasy"
+    },
+    {
+        "image":" https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/zwigato-et00351091-1674826404.jpg",
+        "Name":"zwigato",
         "Description":"Drama"
     }
 ]
